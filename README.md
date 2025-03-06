@@ -1,4 +1,4 @@
-# diccionario
+x = 'SI'
 meme_dict = {
             "CRINGE": "Algo excepcionalmente raro o embarazoso",
             "LOL": "Una respuesta común a algo gracioso (Laughing out loud)",
@@ -8,9 +8,16 @@ meme_dict = {
             "AGGRO": "Ponerse agresivo/enojado",
             }
 
-word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
-
-if word in meme_dict.keys():
-    print(meme_dict[word])
-else:
-    print("Uy, tu palabra no está!")
+while True:
+    if x == 'SI':
+        word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+        
+        if word in meme_dict.keys():
+            print(meme_dict[word])
+        else:
+            print("Uy, tu palabra no está!")
+    
+        x = input("Buscar de nuevo? (SI o NO)")
+    else:
+        break
+print("Gracias por usar!")
