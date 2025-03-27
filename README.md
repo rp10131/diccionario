@@ -9,15 +9,13 @@ meme_dict = {
             }
 
 while True:
-    if x == 'SI':
-        word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
-        
-        if word in meme_dict.keys():
+    if x.upper == 'SI':
+        word = input("Escribe una palabra que no entiendas: ")
+        if word.upper in meme_dict.keys():
             print(meme_dict[word])
         else:
             print("Uy, tu palabra no está!")
-    
-        x = input("Buscar de nuevo? (SI o NO)")
+        x = input("Buscar de nuevo? (si o no) (sin tildes) ")
     else:
         break
 print("Gracias por usar!")
